@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>불편한 편의점</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0c99aebf9b.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="header-box">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <ul class="nav">
+                <li>기업문의</li>
+                <li>회사소개</li>
+                <li>계정관리</li>
+                <li><button>로그인</button></li>
+            </ul>
+        </div>
+    </header>
+    <div id="All">
+        <div id="map">
+            <div class="map-wrap">
+                <ul>
+                    <li>
+                        웰컴  <i class="fa-solid fa-chevron-right map-right"></i>
+                    </li>
+                    <li>
+                        국내도서
+                        <a href="#none"><img src="img1/down.png" alt="down-arrow"></a>
+                        <i class="fa-solid fa-chevron-right map-right"></i>
+                    </li>
+                    <li>
+                        소설/시/희곡
+                        <a href="#none"><img src="img1/down.png" alt="down-arrow"></a>
+                        <i class="fa-solid fa-chevron-right map-right"></i>
+                    </li>
+                    <li>
+                        한국소설
+                        <a href="#none"><img src="img1/down.png" alt="down-arrow"></a>
+                        <i class="fa-solid fa-chevron-right map-right"></i>
+                    </li>
+                    <li>
+                        한국 장편소설
+                        <a href="#none"><img src="img1/down.png" alt="down-arrow"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="title">
+            <div class="title-wrap">
+                <div class="title-one">
+                    <img src="img1/book.jpg" alt="book">
+                </div>
+                <div class="title-two">
+                    <div class="title2-1">
+                        <ul>
+                            <li><span>소득공제</span></li>
+                            <li><span>2021 올해의 책</span></li>
+                        </ul>
+                        <p><b>불편한 편의점</b><span>[ 40만부 벚꽃 에디션 ]</span></p>
+                        <ul>
+                            <li><a href="#none">김호연</a> <span>저</span></li>
+                            <li><a href="#none"> 나무옆의자</a><span></span></li>
+                            <li>2021년 4월 20일</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>★★★★★</span>
+                                <b>9.2</b>
+                            </li>
+                            <li>
+                                <a href="#review">회원리뷰(<span>416</span>건)</a>
+                            </li>
+                            <li>
+                                <span>판매지수 1,194,939</span>
+                            </li>
+                            <li>
+                                <img src="img1/best-icon.png" alt="best-icon">
+                                <a href="#none">국내도서 28위</a>
+                            </li>
+                            <li>국내도서 1위 3주</li>
+                        </ul>
+                    </div>
+                    <div class="title2-2">
+                        <div class="sec1">
+                            <div class="sec1-1">
+                                <table>
+                                    <tr>
+                                        <th>정가</th>
+                                        <td>14,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <th>판매가</th>
+                                        <td><b>12,600원</b><span> (10% 할인)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>북클럽머니<br>최대혜택가</th>
+                                        <td>11,100원</td>
+                                    </tr>
+                                    <tr>
+                                        <th>적립/혜택</th>
+                                        <td>700원(5% 적립)<br>
+                                            5만원 이상 구매 시 2천원 추가적립</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="sec1-2">
+                                <table>
+                                    <tr>
+                                        <th>결제혜택</th>
+                                        <td>카드/간편결제 혜택을 확인하세요</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="sec1-3">
+                                <table>
+                                    <tr>
+                                        <th>배송안내</th>
+                                        <td>경기 안산시 단원구 고잔2길 45 코스모프라자 6층 <a href="#none">지역변경</a></td>
+                                    </tr>
+                                </table>
+                                <div class="sec1-3-1">
+                                    <span>당일배송</span>
+                                    <span></span>
+                                </div>
+                                <div class="sec1-3-2">
+                                    <p>&#183; 배송비 : 2,500원(15,000원 이상 무료)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec2">
+                            <div class="sec2-1">
+                                <p>판매중</p>
+                                <div class="count">
+                                    <span>수량</span>
+                                    <button id="minus">&#45;</button>
+                                    <input type="text" value="1" id="result">
+                                    <button id="plus">&#43;</button>
+                                </div>
+                                <button>카트에 넣기</button><br>
+                                <button>바로구매</button>
+                            </div>
+                            <div class="sec2-2">
+                                <ul>
+                                    <li>&#183; 해외배송가능</li>
+                                    <li>&#183; 최저가보상</li>
+                                    <li>&#183; 문화비소득공제 신청 가능</li>
+                                </ul>
+                                <button>리스트에 넣기</button><br>
+                                <button>시리즈 알림신청</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="manybuy">
+            <div class="manybuy-wrap">
+                <div class="manybuy-list">
+                    <ul>
+                        <li class="mb-click">
+                            <a href="#none">이 책을 구입하신 분들이 <span>함께 산 책</span></a>
+                        </li>
+                        <li>
+                            <a href="#none">이 책을 구입하신 분들이 <span>많이 산 책</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="with-buy">
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/withbuy.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>불편한 편의점 세트</p>
+                                <p>김호연 저 | 나무옆의자</p>
+                                <p><span>25,200원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/withbuy1.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>미드나잇 라이브러리 : 평행우주 에디션</p>
+                                <p>매트 헤이그 | 노진선 역…</p>
+                                <p><span>14,220원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/withbuy2.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>달러구트 꿈 백화점 1,2 세트</p>
+                                <p>이미예 저 | 팩토리나인</p>
+                                <p><span>24,840원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/withbuy3.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>어서 오세요, 휴남동 서점입니다</p>
+                                <p>황보름 저 | 클레이하…</p>
+                                <p><span>13,500원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/withbuy4.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>오늘 밤, 세계에서 사라진다 해도 세트</p>
+                                <p>이치조 미사키 저/권영…</p>
+                                <p><span>25,200원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/withbuy5.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>작별인사</p>
+                                <p>김영하 저 | 복복서가</p>
+                                <p><span>25,200원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/manybuy.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>불편한 편의점 세트</p>
+                                <p>김호연 저 | 나무옆의자</p>
+                                <p><span>25,200원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/manybuy1.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>아버지의 해방일지</p>
+                                <p>정지아 저 | 창비</p>
+                                <p><span>13,500원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/manybuy2.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>하얼빈</p>
+                                <p>김훈 저 | 문학동네</p>
+                                <p><span>14,400원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/manybuy3.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>만일 내가 인생을 다시 산다면(10만부 기념</p>
+                                <p>김혜남 저 | 메이븐</p>
+                                <p><span>15,480원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/manybuy4.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>파친코 세트</p>
+                                <p>이민진 저/신승미 역 | …</p>
+                                <p><span>28,440원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <img src="img1/manybuy5.jpg" alt="manybuy-book">
+                            </a>
+                            <div class="with_buy_text">
+                                <p>트렌드 코리아 2023</p>
+                                <p>김난도,전미영,최지혜…</p>
+                                <p><span>17,100원</span>(10% 할인)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="choice-nav">
+            <div class="choice-nav-wrap">
+                <ul>
+                    <li class="cho-nav-bg">
+                        <a href="#none" class="cho-nav-font">도서정보</a>
+                    </li>
+                    <li>
+                        <a href="#none">리뷰</a>
+                    </li>
+                    <li>
+                        <a href="#none">배송/반품/교환</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>12,600원</li>
+                    <li><button>카트에 넣기</button></li>
+                    <li><button>바로구매</button></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div class="main-wrap">
+                <div class="main-left">
+                    <div id="series">
+                        <h3>이 상품의 시리즈 <span>(3개)</span></h3>
+                        <div class="seriesbox">
+                            <div class="seriesset">
+                                <a href="#none">
+                                    <img src="img1/withbuy.jpg" alt="seriesset">
+                                </a>
+                                <div class="series-text">
+                                    <a href="#none">불편한 편의점 세트</a>
+                                    <p><span>25,200원</span> (10% 할인)</p>
+                                </div>
+                            </div>
+                            <div class="series1">
+                                <a href="#none">
+                                    <img src="img1/series1.jpg" alt="series1">
+                                </a>
+                                <div class="series-text">
+                                    <a href="#none">불편한 편의점</a>
+                                    <p><span>12,600원</span> (10% 할인)</p>
+                                </div>
+                            </div>
+                            <div class="series2">
+                                <a href="#none">
+                                    <img src="img1/series2.jpg" alt="series2">
+                                </a>
+                                <div class="series-text">
+                                    <a href="#none">불편한 편의점2</a>
+                                    <p><span>12,600원</span> (10% 할인)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="aboutbook">
+                        <h3>품목정보</h3>
+                        <div class="aboutbook-table-wrap">
+                            <table>
+                                <tr>
+                                    <th>발행일</th>
+                                    <td>2021년 04월 20일</td>
+                                </tr>
+                                <tr>
+                                    <th>쪽수, 무게, 크기</th>
+                                    <td>268쪽 | 332g | 135*200*20mm</td>
+                                </tr>
+                                <tr>
+                                    <th>ISBN13</th>
+                                    <td>9791161571188</td>
+                                </tr>
+                                <tr>
+                                    <th>ISBN10</th>
+                                    <td>1161571183</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="bookcard">
+                        <h3>북카드</h3>
+                        <div class="bookcard-wrap">
+                            <i class="fa-solid fa-chevron-left prev bookcard-arrow"></i>
+                            <i class="fa-solid fa-chevron-right next bookcard-arrow"></i>
+                            <ul class="bookcard-list">
+                                <li>
+                                    <img src="img1/bookcard.jpg" alt="bookrcard">
+                                </li>
+                                <li>
+                                    <img src="img1/bookcard1.jpg" alt="bookrcard">
+                                </li>
+                                <li>
+                                    <img src="img1/bookcard2.jpg" alt="bookrcard">
+                                </li>
+                                <li>
+                                    <img src="img1/bookcard3.jpg" alt="bookrcard">
+                                </li>
+                                <li>
+                                    <img src="img1/bookcard4.jpg" alt="bookrcard">
+                                </li>
+                                <li>
+                                    <img src="img1/bookcard5.jpg" alt="bookrcard">
+                                </li>
+                                <li>
+                                    <img src="img1/bookcard6.jpg" alt="bookrcard">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="introduce">
+                        <h3>책 소개</h3>
+                        <div class="book-intro"></div>
+                        <div class="book-intro1"></div>
+                        <iframe src="https://www.youtube.com/embed/fTf-KrprLW4"></iframe>
+                    </div>
+                    <div id="chapter">
+                        <h3>목차</h3>
+                        <ul>
+                            <li>산해진미 도시락</li>
+                            <li>제이에스 오브 제이어스</li>
+                            <li>삼각김밥의 용도</li>
+                            <li>원 플러스 원</li>
+                            <li>불편한 편의점</li>
+                            <li>네 캔에 만원</li>
+                            <li>폐기 상품이지만 아직 괜찮아</li>
+                            <li>ALWAYS</li>
+                            <li>감사의 글</li>
+                        </ul>
+                    </div>
+                    <div id="detail-img">
+                        <img src="img1/book-main.jpg" alt="book-main">
+                    </div>
+                    <div id="authors">
+                        <h3>저자 소개</h3>
+                        <div class="authors-box">
+                            <div class="authors-header">
+                                <h4>저자 : <a href="#none">김호연</a></h4>
+                                <button>인물정보</button>
+                            </div>
+                            <div class="authors-main">
+                                <div class="authors-main1">
+                                    <div class="authors-img"></div>
+                                    <div class="authors-intro">
+                                        <div class="intro-textbox"></div>
+                                        <div class="authors-intro-btnbox">
+                                            <button class="read-more"><span>펼쳐보기</span></button>
+                                            <i class="fa-solid fa-chevron-down authors-btn"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="authors-main2">
+                                    <div class="authors-bookbox">
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="company-review">
+                        <div class="com-review-textbox"></div>
+                        <div class="com-review-btnbox">
+                            <button class="read-more1"><span>펼쳐보기</span></button>
+                            <i class="fa-solid fa-chevron-down review-btn"></i>
+                        </div>
+                    </div>
+                    <div id="review">
+                        <h3>회원리뷰</h3>
+                        <div class="review-box-graph">
+                            <div class="review-header">
+                                <h3><span>416</span>명의 회원이 평가한 평균별점</h3>
+                                <div class="rv-header-box">
+                                    <div class="rv-header-first">
+                                        <img src="img1/bluestar5.png" alt="bluestar5">
+                                        <h1>9.2<span>/ 10.0</span></h1>
+                                    </div>
+                                    <p>내용<img src="img1/sbluestar5.png" alt="smallstar"> 편집/디자인 <img src="img1/sbluestar5.png" alt="smallstar"></p>
+                                </div>
+                            </div>
+                            <div class="review-bottom">
+                                <div class="rv-bottom-stargraph">
+                                    <p>구매자 별점</p>
+                                    <div class="rv-star">
+                                        <div class="star-graphbox">
+                                            <img src="img1/bluestar5.png" alt="bluestar">
+                                            <div class="all-graph">
+                                                <div class="graph-gray">
+                                                    <div class="graph-blue1"></div>
+                                                </div>
+                                                <span>76%</span>
+                                            </div>
+                                        </div>
+                                        <div class="star-graphbox">
+                                            <img src="img1/bluestar4.png" alt="bluestar">
+                                            <div class="all-graph">
+                                                <div class="graph-gray">
+                                                    <div class="graph-blue2"></div>
+                                                </div>
+                                                <span>19%</span>
+                                            </div>
+                                        </div>
+                                        <div class="star-graphbox">
+                                            <img src="img1/bluestar3.png" alt="bluestar">
+                                            <div class="all-graph">
+                                                <div class="graph-gray">
+                                                    <div class="graph-blue3"></div>
+                                                </div>
+                                                <span>4%</span>
+                                            </div>
+                                        </div>
+                                        <div class="star-graphbox">
+                                            <img src="img1/bluestar2.png" alt="bluestar">
+                                            <div class="all-graph">
+                                                <div class="graph-gray">
+                                                    <div class="graph-blue4"></div>
+                                                </div>
+                                                <span>0%</span>
+                                            </div>
+                                        </div>
+                                        <div class="star-graphbox">
+                                            <img src="img1/bluestar1.png" alt="bluestar">
+                                            <div class="all-graph">
+                                                <div class="graph-gray">
+                                                    <div class="graph-blue5"></div>
+                                                </div>
+                                                <span>0%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rv-bottom-graph">
+                                    <p>연령대별 평균 점수</p>
+                                    <div class="rv-graph">
+                                        <div class="graphbox">
+                                            <div class="graphcolor1">
+                                                <p>8.0</p>
+                                            </div>
+                                            <!-- <p>10대</p> -->
+                                        </div>
+                                        <div class="graphbox">
+                                            <div class="graphcolor2">
+                                                <p>9.0</p>
+                                            </div>
+                                            <!-- <p>20대</p> -->
+                                        </div>
+                                        <div class="graphbox">
+                                            <div class="graphcolor3">
+                                                <p>9.0</p>
+                                            </div>
+                                            <!-- <p>30대</p> -->
+                                        </div>
+                                        <div class="graphbox">
+                                            <div class="graphcolor4">
+                                                <p>9.0</p>
+                                            </div>
+                                            <!-- <p>40대</p> -->
+                                        </div>
+                                        <div class="graphbox">
+                                            <div class="graphcolor5">
+                                                <p>9.0</p>
+                                            </div>
+                                            <!-- <p>50대</p> -->
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>10대</li>
+                                        <li>20대</li>
+                                        <li>30대</li>
+                                        <li>40대</li>
+                                        <li>50대</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>한줄평</h3>
+                        <div class="review-box-input">
+                            <div class="inputbox-header">
+                                <p>평점</p>
+                                <div id="starbox">
+                                    <ul>
+                                        <li class="s1"></li>
+                                        <li class="s2"></li>
+                                        <li class="s3"></li>
+                                        <li class="s4"></li>
+                                        <li class="s5"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="inputbox-bottom">
+                                <input type="text" placeholder="한글 기준 50자까지 작성 가능" maxlength="49" class="korean">
+                                <span><b>0</b> / 50</span>
+                                <button class="send">등록</button>
+                            </div>
+                        </div>
+                        <div class="review-list">
+                            <div class="rv-list-header">
+                                <div>
+                                    <img src="img1/sbluestar5.png" alt="bluestar5">
+                                    <p>재미있네요 추천합니다</p>
+                                    <ul>
+                                        <li>la***4</li>
+                                        <li>2023.02.23</li>
+                                        <li><button>좋아요</button></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="img1/sbluestar5.png" alt="bluestar5">
+                                    <p>재미있게 잘 읽었어요</p>
+                                    <ul>
+                                        <li>i****1</li>
+                                        <li>2023.02.23</li>
+                                        <li><button>좋아요</button></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="img1/sbluestar5.png" alt="bluestar5">
+                                    <p>영상을 보는 듯 잘 표현된 글이 참 좋네요 강추</p>
+                                    <ul>
+                                        <li>c***9</li>
+                                        <li>2023.02.20</li>
+                                        <li><button>좋아요</button></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="img1/sbluestar5.png" alt="bluestar5">
+                                    <p>재미있어요</p>
+                                    <ul>
+                                        <li>a****0</li>
+                                        <li>2023.02.18</li>
+                                        <li><button>좋아요</button></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="img1/sbluestar5.png" alt="bluestar5">
+                                    <p>좋아요!</p>
+                                    <ul>
+                                        <li>f****3</li>
+                                        <li>2023.02.16</li>
+                                        <li><button>좋아요</button></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="img1/sbluestar5.png" alt="bluestar5">
+                                    <p>재미있게 잘 읽었습니다!!</p>
+                                    <ul>
+                                        <li>b***a</li>
+                                        <li>2023.02.15</li>
+                                        <li><button>좋아요</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rv-list-bottom">
+                                <div class="rv-list-hd1">
+                                    <ul>
+                                        <li><a href="#none"><i class="fa-solid fa-angles-left"></i></a></li>
+                                        <li><a href="#none"><i class="fa-solid fa-angle-left rv-lf-btn"></i></a></li>
+                                        <li><a href="#none">1</a></li>
+                                        <li><a href="#none">2</a></li>
+                                        <li><a href="#none">3</a></li>
+                                        <li><a href="#none">4</a></li>
+                                        <li><a href="#none">5</a></li>
+                                        <li><a href="#none"><i class="fa-solid fa-angle-right rv-rg-btn"></i></a></li>
+                                        <li><a href="#none"><i class="fa-solid fa-angles-right"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="rv-list-hd2">
+                                    <ul>
+                                        <li><a href="#none">전체 리뷰</a></li>
+                                        <li><a href="#none">구매 리뷰</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="delivery">
+                        <h3>교환 / 반품 / 품절 안내</h3>
+                        <div class="deliverybox"></div>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="anotherbook">
+                        <h3>관련상품</h3>
+                        <div class="another-box">
+                            <a href="#none"><img src="img1/anotherbook.jpg" alt="another-book"></a>
+                            <div class="another-box-text">
+                                <a href="#none">불편한 편의점(큰글자도서)</a>
+                                <p>29,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-best">
+                        <h3>이 분야의 베스트<a href="#none">더 보기</a></h3>
+                        <div class="right-best-box">
+                            <a href="#none"><img src="img1/series1.jpg" alt="book-img"></a>
+                            <div class="right-best-box-text">
+                                <a href="#none">불편한 편의점</a>
+                                <p>김호연</p>
+                                <p><b>10%</b><span>12,600</span>원</p>
+                            </div>
+                        </div>
+                        <div class="right-best-box">
+                            <a href="#none"><img src="img1/series2.jpg" alt="book-img"></a>
+                            <div class="right-best-box-text">
+                                <a href="#none">불편한 편의점2</a>
+                                <p>김호연</p>
+                                <p><b>10%</b><span>12,600</span>원</p>
+                            </div>
+                        </div>
+                        <div class="right-best-box">
+                            <a href="#none"><img src="img1/right-best3.jpg" alt="book-img"></a>
+                            <div class="right-best-box-text">
+                                <a href="#none">아버지의<br>해방일지</a>
+                                <p>정지아</p>
+                                <p><b>10%</b><span>13,500</span>원</p>
+                            </div>
+                        </div>
+                        <div class="right-best-box">
+                            <a href="#none"><img src="img1/right-best4.jpg" alt="book-img"></a>
+                            <div class="right-best-box-text">
+                                <a href="#none">희망의 끈</a>
+                                <p>히가시노 게이고</p>
+                                <p><b>10%</b><span>16,920</span>원</p>
+                            </div>
+                        </div>
+                        <div class="right-best-box">
+                            <a href="#none"><img src="img1/right-best5.jpg" alt="book-img"></a>
+                            <div class="right-best-box-text">
+                                <a href="#none">홈 스위트 홈</a>
+                                <p>최진영 외 5명</p>
+                                <p><b>10%</b><span>13,950</span>원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> // txt 가져오기 , 작가소개 책 ajax 가져오기
+        $.get("textbox/text.txt", function (data) {
+            $(".book-intro").html(data);
+        });
+
+        $.get("textbox/text1.txt", function (data) {
+            $(".book-intro1").html(data);
+        });
+
+        $.get("textbox/authors.txt", function (data){
+            $(".intro-textbox").html(data);
+        })
+
+        $.get("textbox/book.txt",function(data){
+            $(".com-review-textbox").html(data);
+        })
+
+        $.get("textbox/delivery.txt",function(data){
+            $(".deliverybox").html(data);
+        })
+
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=authors",
+            data: { query: "김호연" },
+            headers: { Authorization: "KakaoAK ceda120f981fd447959e3c1bf485097d" }
+        })
+        .done(function (msg) {
+            for (var i = 0; i < 5; i++) {
+                $(".authors-bookbox> .box").eq(i).append("<a href='#none'><img src='" + msg.documents[i].thumbnail +"'></a>");
+                $(".authors-bookbox> .box").eq(i).append("<h4>" + msg.documents[i].title + "</h4>");
+            }
+        });
+    </script>
+    <div id="topbtn">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="first-footer">
+                <h4>(주) 밀리의 서재</h4>
+                <ul class="sns">
+                    <li class="youtube">
+                        <a href="https://www.youtube.com/channel/UC6bk8AaEXA1hBnGXcLyj1QQ" target="_blank"></a>
+                    </li>
+                    <li class="instagram">
+                        <a href="https://www.instagram.com/millie_bookclub" target="_blank"></a>
+                    </li>
+                    <li class="facebook">
+                        <a href="https://www.facebook.com/millie.co.kr/" target="_blank"></a>
+                    </li>
+                    <li class="kakao">
+                        <a href="https://pf.kakao.com/_MhGhC"></a>
+                    </li>
+                    <li class="naver">
+                        <a href="https://post.naver.com/millietown" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec-footer">
+                <div class="imformation">
+                    <p><b>사업자 정보 펼쳐보기</b></p>
+                    <i class="fa-solid fa-angle-up openbtn1"></i>
+                </div>
+                <div class="imfor-list list1">
+                    <ul>
+                        <li>대표이사 : 서영택</li>
+                        <li>사업자등록번호 : 423-88-00370</li>
+                        <li>호스팅 제공자 : (주)밀리의 서재</li>
+                    </ul>
+                    <ul>
+                        <li>통신판매업 신고번호 : 2016-서울마포-2012호</li>
+                        <li>주소 : 서울특별시 마포구 양화로 45, 16층(메세나폴리스 세아타워)</li>
+                    </ul>
+                </div>
+                <div class="imfor-list list2">
+                    <ul>
+                        <li>고객정보보호 책임자 : 김태형(beiron@millie.town)</li>
+                        <li>마케팅 제휴 문의 : business@millie.town</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="third-footer">
+                <ul>
+                    <li>
+                        <a href="#none">이용약관 <i class="fa-solid fa-chevron-right openbtn-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none"><b>개인정보처리방침 <i class="fa-solid fa-chevron-right openbtn-right"></i></b></a>
+                    </li>
+                    <li>
+                        <a href="#none">청소년보호정책 <i class="fa-solid fa-chevron-right openbtn-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none">고객센터 <i class="fa-solid fa-chevron-right openbtn-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none">B2B 문의 <i class="fa-solid fa-chevron-right openbtn-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none">콘텐츠 제휴문의 <i class="fa-solid fa-chevron-right openbtn-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none">뷰어 다운로드 <i class="fa-solid fa-chevron-right openbtn-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#none">회사 소개 <i class="fa-solid fa-chevron-right openbtn-right"></i></a>
+                    </li>
+                </ul>
+                <p>Copyright © 2022 밀리의 서재 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "LINESeedKR-Bd";
+  font-weight: 700;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 30;
+}
+header .header-box {
+  height: 64px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+header .header-box .logo {
+  margin: 20px 0;
+}
+header .header-box .logo img {
+  max-width: 56px;
+}
+header .header-box .nav {
+  display: flex;
+  align-items: center;
+}
+header .header-box .nav li {
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+header .header-box .nav li button {
+  padding: 7px 25px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#topbtn {
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  color: #999;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 25px;
+  line-height: 53px;
+  display: none;
+}
+
+footer {
+  width: 100%;
+}
+footer .footer-wrap {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+}
+footer .footer-wrap .first-footer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wrap .first-footer h4 {
+  line-height: 30px;
+}
+footer .footer-wrap .first-footer .sns {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wrap .first-footer .sns li a {
+  margin: 0 5px;
+}
+footer .footer-wrap .first-footer .sns .youtube a {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url("../img/youtube.png") 50% 50%/contain no-repeat;
+}
+footer .footer-wrap .first-footer .sns .instagram a {
+  width: 24px;
+  height: 24px;
+  background: url("../img/insta.png") 50% 50%/contain no-repeat;
+  display: block;
+}
+footer .footer-wrap .first-footer .sns .facebook a {
+  width: 24px;
+  height: 24px;
+  background: url("../img/facebook.png") 50% 50%/contain no-repeat;
+  display: block;
+}
+footer .footer-wrap .first-footer .sns .kakao a {
+  width: 24px;
+  height: 24px;
+  background: url("../img/kakao.png") 50% 50%/contain no-repeat;
+  display: block;
+}
+footer .footer-wrap .first-footer .sns .naver a {
+  width: 24px;
+  height: 24px;
+  background: url("../img/naver.png") 50% 50%/contain no-repeat;
+  display: block;
+}
+footer .footer-wrap .sec-footer .imformation {
+  margin-bottom: 20px;
+  display: flex;
+}
+footer .footer-wrap .sec-footer .imformation p {
+  color: #a5a5a5;
+  font-size: 11px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+footer .footer-wrap .sec-footer .imformation .openbtn1 {
+  height: 15px;
+  font-weight: bold;
+  color: #a5a5a5;
+  font-size: 11px;
+  line-height: 16px;
+  cursor: pointer;
+}
+footer .footer-wrap .sec-footer .imformation .openbtn-rotate {
+  transform: rotate(180deg);
+}
+footer .footer-wrap .sec-footer .imfor-list {
+  display: none;
+}
+footer .footer-wrap .sec-footer .imfor-list ul {
+  display: flex;
+}
+footer .footer-wrap .sec-footer .imfor-list ul li {
+  margin-right: 20px;
+  color: #a5a5a5;
+  font-size: 11px;
+}
+footer .footer-wrap .sec-footer .list1 {
+  margin-bottom: 20px;
+}
+footer .footer-wrap .sec-footer .list2 {
+  margin-bottom: 30px;
+}
+footer .footer-wrap .third-footer {
+  margin-bottom: 20px;
+}
+footer .footer-wrap .third-footer ul {
+  display: flex;
+  margin-bottom: 20px;
+}
+footer .footer-wrap .third-footer ul li {
+  margin-right: 20px;
+  font-size: 12px;
+  color: #6f6f6f;
+}
+footer .footer-wrap .third-footer p {
+  font-size: 11px;
+  color: #6f6f6f;
+}
